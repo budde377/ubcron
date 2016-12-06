@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ubcron</title>
+<link href="/open-sans-fontface/open-sans.css" rel="stylesheet" type="text/css">
+<link href="/roboto/roboto-fontface.css" rel="stylesheet" type="text/css">
+<link href="/roboto-condensed/roboto-condensed-fontface.css" rel="stylesheet" type="text/css">
+<style type='text/css'>
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Open-Sans", sans-serif;
+  line-height: 2em;
+}
+h1{
+  font-family: "Roboto-Condensed", arial, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+}
+main {
+  padding: 2em 0;
+  width: 23em;
+  margin: auto;
+}
+#Apply {
+  padding-top: 1em;
+  width: 23em;
+  margin: auto;
+}
+label {
+    padding-top: 1em;
+    display: block;
+    text-align: left;
+}
+input[type=text], input[type=password] {
+  font-size: 1em;
+  line-height: 2em;
+  padding: 1em;
+  height: 1em;
+  width: 21em;
+  border: 0;
+  background-color: #6aa9c1;
+  border-radius: 0.2em;
+  color: #fff;
+}
+input[type=submit] {
+  margin-top: 3em;
+  border: 0;
+  line-height: 1em;
+  width: 100%;
+  font-size: 1em;
+  padding: 1em 0;
+  font-family: "Roboto-Condensed", arial, sans-serif;
+  color: #fff;
+  background: #479c88;
+  border-radius: 0.2em;
+}
+.notice {
+  line-height: 1.5em;
+  text-align: justify;
+  padding-top: 3em;
+}
+</style>
+</head>
+<body>
+  <main>
+    <h1>Automatisk genansøgning af Ungdomsbolig Aarhus</h1>
+    <form id='Apply' action='/create' method='post'>
+      <label>
+        Ansøger nummer
+        <input type='text' name='username'/>
+      </label>
+      <label>
+        Kodeord
+        <input type='password' name='password'/>
+      </label>
+      <input type='submit' value='Tilmeld'/>
+      <p class="notice">
+        <b>Bemærk:</b> Ved tilmeldelse accepterer du at vi gemmer dine login oplysninger
+        og bruger dem til periodisk at kontakte ungdomsboligaarhus.dk for at
+        genansøge dig. <br />
+        <br />
+        Vi er ikke associeret med Ungdomsbolig Aarhus og påtager os intet ansvar
+        for sikkerhed eller garanti for fortsætte af udbud.
+      </p>
+    </form>
+  </main>
+</body>
+</html>
